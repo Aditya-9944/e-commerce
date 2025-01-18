@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart</title>
+    <!-- CSS-link -->
+    <link rel="stylesheet" href="cart.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+</head>
+<body>
+    <!-- Header with Navbar -->
+    <header>
+        <a href="#" class="logo"><img src="dtm img/logo2.png" alt="Logo"></a>
+        <ul class="navmenu" id="navmenu">
+            <li><a href="customer.html">Home</a></li>
+            <li><a href="cart.html">Cart</a></li> <!-- Updated Cart link -->
+            <li><a href="#">Contact</a></li>
+            <li><a href="review.html">Reviews</a></li> <!-- Link to Reviews -->
+        </ul>
+        <div class="nav-icon">
+            <a href="#"><i class='bx bx-search'></i></a>
+            <a href="#"><i class='bx bx-user'></i></a>
+            <a href="cart.html"><i class='bx bx-cart'></i></a> <!-- Link to Cart icon -->
+            <div class="bx bx-menu" id="menu-icon" onclick="toggleMenu()"></div>
+        </div>
+    </header>
+
+    <!-- Cart Section -->
+    <section class="cart-section">
+        <h2>Your Cart</h2>
+        <div id="cart-items"></div> <!-- Cart items will be displayed here -->
+        <p><strong>Total:</strong> Rs.<span id="cart-total">0</span></p>
+        <button onclick="placeOrder()">Order Now</button> <!-- Order Now button -->
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>
+

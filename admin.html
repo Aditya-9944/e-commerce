@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin</title>
+    <link rel="stylesheet" href="admin.css">
+   
+</head>
+<body>
+    <section id="orders-section">
+        <h2>All Orders</h2>
+        <div id="order-container">
+            <!-- Orders will be displayed here -->
+        </div>
+    </section>
+    <h2>Sales Dashboard</h2>
+    <section id="dashboard">
+        <!-- Most Ordered Dish Section -->
+        <div id="most-ordered" class="most-ordered">
+            <!-- Most ordered dish details will be injected here by JavaScript -->
+        </div>
+    
+        <!-- Orders Section (Unique ID) -->
+        <div id="all-orders-container">
+            <!-- Orders will be displayed here -->
+        </div>
+    
+        <!-- Sales Summary Section -->
+        <div id="sales-summary">
+            <!-- Sales data by date and time will be displayed here -->
+        </div>
+    
+        <!-- Highest Sale Time Section -->
+        <div id="highest-sale-time" class="most-ordered">
+            <!-- Highest sale time details will be displayed here -->
+        </div>
+    
+        <!-- Daily Sales Summary Section -->
+        <div id="daily-sales-summary" class="daily-sales"> 
+            <!-- Daily sales summary will be displayed here -->
+        </div>
+    </section>
+    
+        <h2>Sales Summary</h2>
+        <canvas id="ordersChart" width="400" height="200"></canvas>
+    </section>
+    <button onclick="downloadOrdersToExcel()">Download Orders as Excel</button>
+
+
+    
+
+    <script src="admin.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.16.9/xlsx.full.min.js"></script>
+
+
+
+
+</body>
+</html>

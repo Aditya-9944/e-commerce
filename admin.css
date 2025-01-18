@@ -1,0 +1,161 @@
+/* admin.css */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #e8ecf3; /* Soft background for contrast */
+    color: #333;
+    line-height: 1.6;
+}
+
+#orders-section, #dashboard {
+    padding: 2rem;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    margin: 2rem auto;
+    max-width: 1200px;
+}
+
+h2 {
+    text-align: center;
+    color: #3c4b63;
+    font-size: 2rem;
+    font-weight: 700;
+    margin-top: 1rem;
+}
+
+#order-container, #sales-summary, #highest-sale-time, #daily-sales-summary {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 1.5rem;
+    padding: 1rem;
+}
+
+.order, .most-ordered {
+    background-color: #fdfdfd;
+    border-radius: 8px;
+    padding: 1.5rem;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-left: 5px solid #4a90e2; /* Accent border */
+}
+
+.order:hover, .most-ordered:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.order h3, .most-ordered h2 {
+    font-size: 1.6rem;
+    color: #4a90e2; /* Primary color for headings */
+    margin-bottom: 0.7rem;
+    font-weight: 600;
+}
+
+.order p, .most-ordered p {
+    color: #555a66;
+    margin: 0.5rem 0;
+}
+
+#most-ordered p, #highest-sale-time p, #daily-sales-summary p {
+    font-size: 0.95rem;
+    line-height: 1.5;
+}
+
+.daily-sales {
+    background-color: #fafafa; /* Slightly tinted background */
+    padding: 1.5rem;
+    border-radius: 8px;
+    border-left: 5px solid #4ba2df; /* Accent color for daily sales */
+    font-size: 0.95rem;
+    line-height: 1.5;
+}
+/* Admin CSS */
+
+#sales-summary {
+    padding: 1.5rem;
+    background-color: #f7faff; /* Soft blue-tinted background */
+    border-radius: 8px;
+    border-left: 5px solid hwb(212 29% 11%); /* Accent border to match primary color */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Style for each day's sales summary entry */
+.sales-day {
+    background-color: #ffffff; /* White background for clarity */
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    margin-bottom: 1rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-left: 4px solid #4a90e2; /* Accent color */
+}
+
+.sales-day:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Styling for each day's header in sales summary */
+.sales-day h3 {
+    font-size: 1.4rem;
+    color: #4a90e2;
+    margin-bottom: 0.6rem;
+    font-weight: 600;
+}
+
+/* Styling for each hour entry */
+.sales-day p {
+    color: #555a66;
+    margin: 0.3rem 0;
+    font-size: 1rem;
+    padding-left: 1rem;
+    position: relative;
+}
+
+.sales-day p::before {
+    content: "•"; /* Bullet point for each hour */
+    color: #4a90e2;
+    font-weight: bold;
+    margin-right: 0.5rem;
+    position: absolute;
+    left: 0;
+}
+button {
+    background-color: #63686d; /* Blue background */
+    color: #fff; /* White text */
+    padding: 5px 15px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+    background-color: #252627; /* Darker blue on hover */
+    transform: translateY(-2px); /* Lift effect on hover */
+}
+
+button:active {
+    background-color: #080909; /* Even darker blue when clicked */
+    transform: translateY(0); /* Return to original position */
+}
+
+
+/* Responsive styling */
+@media (max-width: 768px) {
+    #sales-summary {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    #order-container, #sales-summary, #highest-sale-time, #daily-sales-summary {
+        grid-template-columns: 1fr;
+    }
+}

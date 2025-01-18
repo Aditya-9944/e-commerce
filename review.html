@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Review</title>
+    <link rel="stylesheet" href="review.css">
+</head>
+<body>
+    <div class="feedback-container">
+        <h2>Customer Review</h2>
+        <p>We value your feedback. Please fill out the form below.</p>
+        
+        <form action="https://formsubmit.co/adimft30@gmail.com" method="POST">
+            <!-- Required fields for FormSubmit -->
+            <input type="hidden" name="_subject" value="New Customer Feedback">
+            <input type="hidden" name="_captcha" value="false">
+            <input type="hidden" name="_next" value="thank-you.html">
+            
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="feedback">Feedback:</label>
+            <textarea id="feedback" name="feedback" rows="4" required></textarea>
+
+            <button type="submit">Submit Feedback</button>
+        </form>
+    </div>
+</body>
+</html>
