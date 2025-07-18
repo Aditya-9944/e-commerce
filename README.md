@@ -6,7 +6,7 @@ A clean and simple e-commerce front-end layout made with HTML, CSS, and JavaScri
 ---
 
 ## 🌐 Live Demo
-https://aditya-9944.github.io/e-commerce/
+https://aditya-9944.github.io/e-commerce-restraunt/
 
 ---
 
