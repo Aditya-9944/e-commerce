@@ -10,12 +10,6 @@ https://aditya-9944.github.io/e-commerce-restraunt/
 
 ---
 
-## 📸 Screenshots
-
-*(Add screenshots of homepage, product listings, etc.)*
-
----
-
 ## 🔧 Tech Stack
 
 - HTML5
